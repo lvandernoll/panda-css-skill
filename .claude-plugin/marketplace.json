@@ -1,0 +1,13 @@
+{
+  "name": "panda-css-marketplace",
+  "owner": {
+    "name": "Leon van der Noll"
+  },
+  "plugins": [
+    {
+      "name": "panda-css",
+      "source": "./plugins/panda-css",
+      "description": "Panda CSS expertise: build-time CSS-in-JS, css()/cva/sva, config recipes, patterns, tokens, and CLI workflow."
+    }
+  ]
+}

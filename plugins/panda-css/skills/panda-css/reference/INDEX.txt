@@ -1,0 +1,441 @@
+# Panda CSS reference index — header : line in reference/llms-full.txt
+# Read a section: sed -n 'START,ENDp' reference/llms-full.txt  (or Read tool with offset)
+
+Table of Contents  ::  L7
+Browser Support  ::  L118
+Browserlist  ::  L130
+Polyfills  ::  L147
+Frequently Asked Questions  ::  L167
+How does Panda manage style conflicts ?  ::  L171
+Imported Image is not working in Vite App  ::  L201
+How to get Panda to work with Jest?  ::  L226
+HMR does not work when I use `tsconfig` paths?  ::  L264
+HMR not triggered  ::  L297
+Why are my styles not applied?  ::  L314
+How can I debug the styles?  ::  L322
+Why is my IDE not showing `styled-system` imports?  ::  L332
+How do I get a type with each recipe properties?  ::  L339
+How do I split recipe props from the rest?  ::  L361
+How do I reference a token value or css var?  ::  L385
+Should I commit the styled-system folder?  ::  L407
+How does Panda work?  ::  L414
+I'm seeing a "Could not resolve xxx" error with esbuild/tsup. What should I do?  ::  L428
+Why does importing `styled` not exist?  ::  L435
+Why is my preset overriding the base one, even after adding it to the array?  ::  L443
+Why is my base condition not working in this example?  ::  L450
+What's the difference between using `defineConfig()` vs `definePreset()`  ::  L460
+How can I completely override the default tokens?.  ::  L467
+How do I make a design system / component library with Panda?  ::  L477
+Can I use dynamic styles with Panda?  ::  L483
+Should I use atomic or config recipes ?  ::  L489
+Why does the panda codegen command fail ?  ::  L506
+How can I generate all possible CSS variants at build time?  ::  L521
+Can I use one-off media query and other at rules?  ::  L530
+How can I prevent other libraries from overriding my styles?  ::  L555
+Get started with Panda  ::  L580
+Installation  ::  L593
+Next Steps  ::  L609
+Playground  ::  L640
+Acknowledgement  ::  L648
+Why Panda  ::  L664
+Backstory  ::  L671
+The new era of CSS-in-JS  ::  L683
+When to use Panda?  ::  L710
+When not to use Panda?  ::  L796
+Using Angular  ::  L813
+Start a new project  ::  L819
+Start your build process  ::  L941
+Using Astro  ::  L994
+Setup  ::  L1000
+Troubleshooting  ::  L1145
+Panda CLI  ::  L1160
+Troubleshooting  ::  L1309
+Using Ember  ::  L1324
+Start a new project  ::  L1330
+Troubleshooting  ::  L1590
+Using Gatsby  ::  L1605
+Troubleshooting  ::  L1760
+Using Next.js  ::  L1775
+Start a new project  ::  L1786
+Troubleshooting  ::  L2106
+Using Nuxt  ::  L2158
+Start a new project  ::  L2164
+Start your build process  ::  L2338
+Using PostCSS  ::  L2388
+Troubleshooting  ::  L2528
+Using Preact  ::  L2543
+Start a new project  ::  L2549
+Start your build process  ::  L2643
+Troubleshooting  ::  L2680
+Using Qwik  ::  L2695
+Start a new project  ::  L2701
+Start your build process  ::  L2763
+Troubleshooting  ::  L2818
+Using React Router  ::  L2833
+Start a new project  ::  L2839
+Troubleshooting  ::  L3081
+Using Redwood  ::  L3096
+Start a new project  ::  L3104
+Start your build process  ::  L3221
+Troubleshooting  ::  L3263
+Using Remix  ::  L3278
+Start a new project  ::  L3284
+Troubleshooting  ::  L3497
+Using Rsbuild  ::  L3522
+Start a new project  ::  L3528
+Start your build process  ::  L3657
+Troubleshooting  ::  L3703
+Using SolidJS  ::  L3718
+Start a new project  ::  L3724
+Start your build process  ::  L3854
+Troubleshooting  ::  L3901
+Using Storybook  ::  L3916
+Setup  ::  L3922
+Configuring Dark Mode  ::  L4167
+Troubleshooting  ::  L4199
+Using Svelte  ::  L4274
+Start a new project  ::  L4280
+Troubleshooting  ::  L4583
+Using Vite  ::  L4614
+Start a new project  ::  L4620
+Start your build process  ::  L4753
+Troubleshooting  ::  L4799
+Using Vue  ::  L4814
+Start a new project  ::  L4820
+Start your build process  ::  L4989
+Cascade Layers  ::  L5041
+Layer Types  ::  L5052
+Layer Order  ::  L5125
+Layer CSS  ::  L5138
+Customize layers  ::  L5152
+Polyfills  ::  L5156
+Color opacity modifier  ::  L5175
+Conditional Styles  ::  L5278
+Overview  ::  L5299
+Arbitrary selectors  ::  L5346
+Pseudo Classes  ::  L5393
+Pseudo Elements  ::  L5445
+Media Queries  ::  L5514
+Group Selectors  ::  L5597
+Sibling Selectors  ::  L5611
+Data Attribute  ::  L5626
+ARIA Attribute  ::  L5700
+Container queries  ::  L5718
+Reference  ::  L5809
+Custom conditions  ::  L5923
+The extend keyword  ::  L5931
+Example  ::  L5952
+Removing something from a preset  ::  L6027
+Removing something from the base presets  ::  L6048
+Minimal setup  ::  L6075
+FAQ  ::  L6080
+Global Styles  ::  L6090
+Layers overview  ::  L6096
+Reset (preflight)  ::  L6103
+Exposed global CSS variables  ::  L6125
+Setting global styles (base)  ::  L6136
+Custom global variables (`globalVars`)  ::  L6177
+Troubleshooting  ::  L6197
+Panda Integration Hooks  ::  L6209
+Examples  ::  L6235
+Sharing hooks  ::  L6380
+Reference  ::  L6408
+JSX Style Context  ::  L6469
+Atomic Slot Recipe  ::  L6476
+Config Slot Recipe  ::  L6532
+createStyleContext  ::  L6572
+Guides  ::  L6640
+Merging Styles  ::  L6724
+Merging `css` objects  ::  L6728
+Spreading `css.raw` objects  ::  L6773
+Merging `cva` + `css` styles  ::  L6808
+Merging `sva` + `css` styles  ::  L6842
+Merging config recipe and style object  ::  L6883
+Merging within JSX component  ::  L6904
+Patterns  ::  L6967
+Creating Patterns  ::  L6974
+Predefined Patterns  ::  L6978
+Usage with JSX  ::  L7803
+Recipes  ::  L7863
+Atomic Recipe (or cva)  ::  L7881
+Config Recipe  ::  L8178
+Methods and Properties  ::  L8438
+Best Practices  ::  L8503
+Limitations  ::  L8509
+Static CSS  ::  L8584
+Should I use atomic or config recipes ?  ::  L8591
+Responsive Design  ::  L8620
+Overview  ::  L8658
+Slot Recipes  ::  L8772
+Atomic Slot Recipe (or sva)  ::  L8794
+Config Slot Recipe  ::  L9078
+Style props  ::  L9279
+Configure JSX  ::  L9317
+Using Style Props  ::  L9370
+Factory Function  ::  L9439
+JSX Patterns  ::  L9621
+Making your own styled components  ::  L9643
+TypeScript  ::  L9669
+Styled System  ::  L9741
+How does it work?  ::  L9785
+Pre-rendering  ::  L9806
+Template Literals  ::  L9815
+Getting started  ::  L9827
+The `css` function  ::  L9846
+The `styled` tag  ::  L9878
+Nested styles  ::  L9912
+Hashing class names  ::  L9966
+Using tokens  ::  L10008
+Caveats  ::  L10022
+Virtual Color  ::  L10037
+Using with recipes  ::  L10059
+Using with different color modes  ::  L10082
+Semantic Virtual Colors  ::  L10120
+Pregenerated Virtual Colors  ::  L10200
+Configuration  ::  L10248
+Nested Semantic Tokens  ::  L10337
+Writing Styles  ::  L10370
+Atomic Styles  ::  L10377
+Nested Styles  ::  L10603
+Global styles  ::  L10661
+Style Composition  ::  L10698
+Important styles  ::  L10917
+TypeScript  ::  L10935
+Property conflicts  ::  L10948
+Global vars  ::  L10976
+Animation Styles  ::  L11027
+Defining Animation Styles  ::  L11033
+Update the Config  ::  L11066
+Using Animation Styles  ::  L11086
+Nesting animation styles  ::  L11120
+Best Practices  ::  L11178
+Layer Styles  ::  L11199
+Defining layer styles  ::  L11211
+Update the config  ::  L11234
+Using layer styles  ::  L11254
+Nesting layer styles  ::  L11266
+Spec  ::  L11332
+Spec Command  ::  L11343
+Spec Output  ::  L11353
+FAQs  ::  L11849
+Using Panda Studio  ::  L11860
+Panda Studio Setup  ::  L11882
+Text Styles  ::  L11905
+Defining text styles  ::  L11917
+Update the config  ::  L11944
+Using text styles  ::  L11964
+Nesting text styles  ::  L11976
+Best Practices  ::  L12037
+Tokens  ::  L12057
+Core Tokens  ::  L12071
+Semantic Tokens  ::  L12137
+Token Nesting  ::  L12201
+Token Types  ::  L12246
+Token Helpers  ::  L12663
+CSS variables  ::  L12668
+Using Tokens  ::  L12696
+Style Properties  ::  L12702
+Composite values  ::  L12719
+Vanilla JS  ::  L12788
+Background  ::  L12861
+Background Colors  ::  L12867
+Background Gradients  ::  L12880
+Background Position  ::  L12939
+Border  ::  L12968
+Compound Properties  ::  L12974
+Border Radius  ::  L12986
+Border Width  ::  L13050
+Border Color  ::  L13093
+Display  ::  L13142
+Display Property  ::  L13148
+Hiding Elements  ::  L13154
+Divide  ::  L13178
+Divide X  ::  L13184
+Divide Y  ::  L13190
+Divide Color  ::  L13196
+Divide Style  ::  L13202
+Effects  ::  L13211
+Opacity  ::  L13218
+Box Shadow  ::  L13228
+Mix Blend Mode  ::  L13242
+Filter  ::  L13254
+Backdrop Filter  ::  L13275
+Flex and Grid  ::  L13299
+Flex  ::  L13306
+Grid  ::  L13338
+Focus Ring  ::  L13362
+Focus Ring Variants  ::  L13369
+Focus Visible Ring  ::  L13395
+Customization  ::  L13412
+Global Ring Color  ::  L13447
+Examples  ::  L13482
+Gradients  ::  L13559
+Examples  ::  L13576
+Helpers  ::  L13720
+Screen Reader-Only Content  ::  L13726
+Debug  ::  L13735
+Interactivity  ::  L13747
+Accent Color  ::  L13755
+Caret Color  ::  L13763
+Scrollbar  ::  L13772
+Scroll Margin  ::  L13781
+Scroll Padding  ::  L13802
+Scroll Snapping  ::  L13823
+Layout  ::  L13859
+Aspect Ratio  ::  L13865
+Position  ::  L13878
+Top / Right / Bottom / Left  ::  L13887
+Container Query  ::  L13921
+List  ::  L13933
+List Style Image  ::  L13939
+Outline  ::  L13962
+Compound Property  ::  L13968
+Outline Width  ::  L13981
+Outline Color  ::  L13995
+Outline Offset  ::  L14008
+Sizing  ::  L14024
+Width  ::  L14030
+Height  ::  L14083
+Spacing  ::  L14156
+Padding  ::  L14160
+Margin  ::  L14222
+SVG  ::  L14287
+Fill  ::  L14293
+Stroke  ::  L14305
+Stroke Width  ::  L14317
+Tables  ::  L14332
+Border Spacing  ::  L14338
+Border Spacing X  ::  L14350
+Border Spacing Y  ::  L14362
+Transforms  ::  L14377
+Scale  ::  L14383
+Translate  ::  L14407
+Transitions  ::  L14436
+Transition  ::  L14442
+Animation  ::  L14461
+Typography  ::  L14480
+Font Properties  ::  L14486
+Line Clamp (Truncation)  ::  L14504
+Text Styles  ::  L14519
+Conditions  ::  L14543
+Creating a condition  ::  L14550
+Customizing Built-in Conditions  ::  L14615
+Using tokens  ::  L14660
+Mixed conditions  ::  L14677
+Multi-block conditions  ::  L14713
+Container queries  ::  L14765
+Minimal setup  ::  L14769
+Config Functions  ::  L14777
+Config Creators  ::  L14784
+Token Creators  ::  L15081
+Deprecations  ::  L15140
+Deprecating a Utility  ::  L15147
+Deprecating a Token  ::  L15166
+Deprecating a Pattern  ::  L15184
+Deprecating a Recipe  ::  L15200
+Custom Deprecation Messages  ::  L15218
+Customizing Patterns  ::  L15254
+Creating a Pattern  ::  L15274
+Customizing Built-in Patterns  ::  L15358
+Minimal setup  ::  L15409
+Presets  ::  L15417
+Creating a preset  ::  L15434
+Which panda presets will be included ?  ::  L15518
+Minimal setup  ::  L15537
+Theme  ::  L15545
+Breakpoints  ::  L15552
+Tokens  ::  L15574
+Keyframes  ::  L15713
+Minimal setup  ::  L15742
+Utilities  ::  L15750
+Creating a custom utility  ::  L15767
+Minimal setup  ::  L15920
+Using Panda in a Component Library  ::  L15931
+Recommendations  ::  L15945
+Ship a Panda Preset  ::  L15957
+Ship a Static CSS File  ::  L15999
+Use Panda as external package  ::  L16066
+FAQ  ::  L16256
+Troubleshooting  ::  L16343
+Debugging  ::  L16354
+panda debug  ::  L16358
+PANDA_DEBUG env variable  ::  L16462
+Performance profiling  ::  L16494
+FAQ  ::  L16507
+The postcss plugin sometimes seems slow or runs too frequently  ::  L16605
+Dynamic styling  ::  L16630
+Runtime values  ::  L16642
+JSX Style Props  ::  L16766
+Property Renaming  ::  L16810
+Static expressions  ::  L16881
+Runtime conditions  ::  L16964
+Referenced values  ::  L17028
+Summary  ::  L17122
+Custom Font  ::  L17178
+Setup  ::  L17185
+Update Panda Config  ::  L17376
+Use the custom fonts  ::  L17393
+Minimal Setup  ::  L17411
+Removing default tokens  ::  L17418
+Removing default utilities  ::  L17444
+Re-using Panda presets  ::  L17472
+Multi-Theme Tokens  ::  L17504
+Multi-Theme Tokens  ::  L17508
+Multi-Themes  ::  L17589
+Static CSS Generator  ::  L17845
+Usage  ::  L17853
+Generating CSS Properties  ::  L17873
+Generating Recipes  ::  L17909
+Performance Considerations  ::  L17981
+Removing unused CSS  ::  L18106
+Migrating from Stitches  ::  L18117
+css function  ::  L18137
+styled function  ::  L18200
+Responsive Styles  ::  L18304
+Tokens and Theme  ::  L18360
+Animations  ::  L18518
+Utils  ::  L18566
+Global Styles  ::  L18622
+Targeting Components  ::  L18654
+Server Side Rendering  ::  L18692
+Conclusion  ::  L18722
+Migrating from Styled Components  ::  L18730
+Installation and Syntax  ::  L18748
+Tagged Template Syntax  ::  L18773
+Object Syntax  ::  L18803
+Prop Interpolation  ::  L18834
+Tokens and Themes  ::  L18875
+Responsive Styles  ::  L18980
+Global Styles  ::  L19055
+Targeting Components  ::  L19087
+Animations  ::  L19135
+Server-Side Rendering  ::  L19192
+Conclusion  ::  L19215
+Migrating from Theme UI  ::  L19223
+Performance  ::  L19238
+Theming  ::  L19246
+The `sx` prop  ::  L19302
+Variants  ::  L19372
+Color Modes  ::  L19485
+Global Styles  ::  L19538
+Component Styles  ::  L19577
+CLI Reference  ::  L19628
+init  ::  L19634
+panda  ::  L19670
+codegen  ::  L19706
+cssgen  ::  L19731
+studio  ::  L19827
+spec  ::  L19855
+analyze  ::  L19877
+debug  ::  L19907
+ship  ::  L19937
+emit-pkg  ::  L19961
+mcp  ::  L19981
+init-mcp  ::  L20004
+Configuring Panda  ::  L20032
+Output css options  ::  L20046
+File system options  ::  L20340
+Design token options  ::  L20628
+JSX options  ::  L20928
+Documentation options  ::  L20992
+Other options  ::  L21043

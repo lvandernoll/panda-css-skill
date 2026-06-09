@@ -1,0 +1,8 @@
+{
+  "name": "panda-css",
+  "description": "Panda CSS expertise: build-time CSS-in-JS, css()/cva/sva, config recipes, patterns, tokens, and CLI workflow.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Leon van der Noll"
+  }
+}
