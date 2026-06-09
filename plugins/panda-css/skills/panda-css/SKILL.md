@@ -5,7 +5,10 @@ description: >-
   (css(), recipes/cva, slot recipes/sva, patterns, design tokens, semantic
   tokens, conditions, config, codegen). Use when writing or editing Panda CSS
   styles, configuring panda.config, defining recipes/tokens/patterns, debugging
-  why styles aren't applied, or setting up Panda in a project.
+  why styles aren't applied, or setting up Panda in a project. ALSO use whenever
+  asked what tokens/colors/conditions/recipes/textStyles a project has or which
+  values are available — read the project's own styled-system, never answer from
+  general knowledge.
 ---
 
 # Panda CSS
@@ -20,6 +23,50 @@ Any work touching Panda: `css()` calls, `cva`/`sva` recipes, patterns
 (`stack`, `hstack`, `grid`...), `panda.config.ts`, tokens/semanticTokens,
 conditions (`_hover`, `md`, `_dark`), JSX style props (`styled`, `Box`), or
 "styles not showing up" debugging.
+
+## STOP — read THIS project's config first (mandatory, not optional)
+
+Panda is config-driven. **Every** project defines its own colors, tokens,
+semantic tokens, conditions, recipes, patterns, textStyles. Your training-data
+knowledge of "default" Panda values is almost always WRONG for a real project:
+palettes get renamed/removed (`brand`, `mono`), semantic tokens added (`text`,
+`border`), conditions invented (`_hoverFocus`, `_focusOrHover`). Answering from
+memory produces made-up values — the #1 failure of this skill.
+
+### Hard rule
+
+If a request is about **what exists or what's available in the project** —
+"what colors / tokens / conditions / recipes / textStyles do we have", "is there
+a hover+focus condition", "which spacing values", "what variants does the button
+recipe take" — you MUST run the inspector and answer ONLY from its output. Do
+NOT list, invent, or assume any value you have not seen in the digest or the
+generated files. If discovery finds nothing, say so and ask for the path — do
+not fall back to generic Panda values.
+
+Same applies before writing/editing styles: cite real tokens from the digest.
+
+### Run the inspector (do this turn, before answering)
+
+```bash
+node scripts/inspect-styled-system.mjs            # auto-locates styled-system/
+node scripts/inspect-styled-system.mjs <path>     # explicit dir (monorepo pkg / external)
+PANDA_STYLED_SYSTEM=<path> node scripts/inspect-styled-system.mjs
+```
+
+Output = real tokens by category, semantic colors, textStyles, conditions (with
+selectors), recipe variants/defaults/slots, patterns. The script walks up to the
+repo root then searches down (skipping `node_modules`), so it finds monorepo
+packages like `packages/styled-system/`. If the user names an external/shared
+design system, pass that path — it overrides the in-repo one.
+
+If auto-locate fails, find the compiled output yourself (`tokens/tokens.d.ts`
+under a `styled-system/` dir) or read the **source** config (`colors.ts`,
+`conditions.ts`, `semanticTokens.ts`, `panda.config.ts`, or a `definePreset`).
+Custom conditions like `_hoverFocus` live in the source `conditions` map and in
+`styled-system/types/conditions.d.ts` — read them, don't guess.
+
+For which generated `.d.ts` answers what, grep recipes, and reading preset
+source for intent: `reference/project-config.md`.
 
 ## Core API (memorize, verified against latest docs)
 
