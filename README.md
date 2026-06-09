@@ -7,11 +7,9 @@ A Claude Code skill that gives Claude expert knowledge of [Panda CSS](https://pa
 In Claude Code:
 
 ```
-/plugin marketplace add <owner>/<repo>
+/plugin marketplace add lvandernoll/panda-css-skill
 /plugin install panda-css@panda-css-marketplace
 ```
-
-Replace `<owner>/<repo>` with this repository (e.g. `leonvandernoll/panda-css-skill`).
 
 Once installed, the skill is available as `/panda-css:panda-css` and Claude will invoke it automatically when you work with Panda CSS.
 
